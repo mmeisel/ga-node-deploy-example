@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Tell our app where to serve our static files (root dir)
 app.use(express.static('public'));
